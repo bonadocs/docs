@@ -1,0 +1,27 @@
+{
+  "id": "guides/Playground/Contracts/Contracts",
+  "title": "Contract Methods",
+  "description": "Environment used for this tutorial: Debian 12/x86_64",
+  "source": "@site/docs/guides/Playground/Contracts/Contracts.md",
+  "sourceDirName": "guides/Playground/Contracts",
+  "slug": "/guides/Playground/Contracts/",
+  "permalink": "/docs/guides/Playground/Contracts/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/Playground/Contracts/Contracts.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Edit Playground",
+    "permalink": "/docs/guides/Playground/Edit"
+  },
+  "next": {
+    "title": "Actions",
+    "permalink": "/docs/guides/Playground/Contracts/Action"
+  }
+}

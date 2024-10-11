@@ -16,13 +16,28 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "guides/Playground/Contracts",
-              "path": "/docs/guides/Playground/Contracts",
+              "id": "guides/Playground/Contracts/Action",
+              "path": "/docs/guides/Playground/Contracts/Action",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "guides/Playground/Contracts/Contract-methods",
+              "path": "/docs/guides/Playground/Contracts/Contract-methods",
               "sidebar": "docsSidebar"
             },
             {
               "id": "guides/Playground/Create",
               "path": "/docs/guides/Playground/Create",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "guides/Playground/Edit",
+              "path": "/docs/guides/Playground/Edit",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "guides/Playground/Variables",
+              "path": "/docs/guides/Playground/Variables",
               "sidebar": "docsSidebar"
             },
             {

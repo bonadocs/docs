@@ -94,30 +94,42 @@
     ],
     "__props": "__props---blog-tags-releasec-9-c-173"
   },
-  "/docs-5f4": {
+  "/docs-aec": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-773": {
+  "/docs-c53": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-3e2": {
+  "/docs-99d": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/guides/docgen-e9f": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-docgen-18-e-213"
   },
-  "/docs/guides/Playground/Contracts-f44": {
+  "/docs/guides/Playground/Contracts/Action-2a7": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-playground-contracts-22-f-461"
+    "content": "content---docs-guides-playground-contracts-action-8-fa-ac3"
+  },
+  "/docs/guides/Playground/Contracts/Contract-methods-a6f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-playground-contracts-contract-methodsdde-0bc"
   },
   "/docs/guides/Playground/Create-163": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-playground-create-3-ff-b51"
+  },
+  "/docs/guides/Playground/Edit-d11": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-playground-edit-8-c-6-78a"
+  },
+  "/docs/guides/Playground/Variables-3b9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-playground-variablesfae-8eb"
   },
   "/docs/guides/registry-02a": {
     "__comp": "__comp---theme-doc-item-178-a40",

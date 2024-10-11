@@ -1,6 +1,6 @@
 {
   "id": "guides/registry",
-  "title": "Registry",
+  "title": "Protocol Registry",
   "description": "",
   "source": "@site/docs/guides/registry.md",
   "sourceDirName": "guides",
@@ -17,8 +17,8 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Contracts - Methods",
-    "permalink": "/docs/guides/Playground/Contracts"
+    "title": "Variables",
+    "permalink": "/docs/guides/Playground/Variables"
   },
   "next": {
     "title": "Common Questions",

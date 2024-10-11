@@ -1,0 +1,27 @@
+{
+  "id": "guides/Playground/Edit",
+  "title": "Edit Playground",
+  "description": "Once inside the playground, you can make changes to the project name, descriptions, and contracts. This means you can add, edit, and delete any contract.",
+  "source": "@site/docs/guides/Playground/Edit.md",
+  "sourceDirName": "guides/Playground",
+  "slug": "/guides/Playground/Edit",
+  "permalink": "/docs/guides/Playground/Edit",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/Playground/Edit.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Create Playground",
+    "permalink": "/docs/guides/Playground/Create"
+  },
+  "next": {
+    "title": "Contract Methods",
+    "permalink": "/docs/guides/Playground/Contracts/Contract-methods"
+  }
+}

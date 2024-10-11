@@ -64,15 +64,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '5f4'),
+    component: ComponentCreator('/docs', 'aec'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '773'),
+        component: ComponentCreator('/docs', 'c53'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '3e2'),
+            component: ComponentCreator('/docs', '99d'),
             routes: [
               {
                 path: '/docs/guides/docgen',
@@ -81,14 +81,32 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/guides/Playground/Contracts',
-                component: ComponentCreator('/docs/guides/Playground/Contracts', 'f44'),
+                path: '/docs/guides/Playground/Contracts/Action',
+                component: ComponentCreator('/docs/guides/Playground/Contracts/Action', '2a7'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/guides/Playground/Contracts/Contract-methods',
+                component: ComponentCreator('/docs/guides/Playground/Contracts/Contract-methods', 'a6f'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/docs/guides/Playground/Create',
                 component: ComponentCreator('/docs/guides/Playground/Create', '163'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/guides/Playground/Edit',
+                component: ComponentCreator('/docs/guides/Playground/Edit', 'd11'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/guides/Playground/Variables',
+                component: ComponentCreator('/docs/guides/Playground/Variables', '3b9'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

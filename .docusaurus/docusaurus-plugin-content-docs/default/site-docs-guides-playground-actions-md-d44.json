@@ -1,0 +1,27 @@
+{
+  "id": "guides/Playground/Actions",
+  "title": "Actions",
+  "description": "",
+  "source": "@site/docs/guides/Playground/Actions.md",
+  "sourceDirName": "guides/Playground",
+  "slug": "/guides/Playground/Actions",
+  "permalink": "/docs/guides/Playground/Actions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/Playground/Actions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Actions",
+    "permalink": "/docs/guides/Playground/Contracts/Action"
+  },
+  "next": {
+    "title": "Variables",
+    "permalink": "/docs/guides/Playground/Variables"
+  }
+}

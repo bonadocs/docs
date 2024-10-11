@@ -1,0 +1,24 @@
+{
+  "id": "guides/Playground/Variables",
+  "title": "Variables",
+  "description": "",
+  "source": "@site/docs/guides/Playground/Variables.md",
+  "sourceDirName": "guides/Playground",
+  "slug": "/guides/Playground/Variables",
+  "permalink": "/docs/guides/Playground/Variables",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/Playground/Variables.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Actions",
+    "permalink": "/docs/guides/Playground/Contracts/Action"
+  },
+  "next": {
+    "title": "Protocol Registry",
+    "permalink": "/docs/guides/registry"
+  }
+}

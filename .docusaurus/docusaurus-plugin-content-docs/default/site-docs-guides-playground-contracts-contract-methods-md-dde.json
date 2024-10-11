@@ -1,0 +1,27 @@
+{
+  "id": "guides/Playground/Contracts/Contract-methods",
+  "title": "Contract Methods",
+  "description": "The most basic way to interact with individual contracts in your playground is through their methods.",
+  "source": "@site/docs/guides/Playground/Contracts/Contract-methods.md",
+  "sourceDirName": "guides/Playground/Contracts",
+  "slug": "/guides/Playground/Contracts/Contract-methods",
+  "permalink": "/docs/guides/Playground/Contracts/Contract-methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/Playground/Contracts/Contract-methods.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Edit Playground",
+    "permalink": "/docs/guides/Playground/Edit"
+  },
+  "next": {
+    "title": "Actions",
+    "permalink": "/docs/guides/Playground/Contracts/Action"
+  }
+}
