@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "overview/introduction",
+          "docs": [
+            {
+              "id": "guides/docgen",
+              "path": "/docs/guides/docgen",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "guides/Playground/Contracts",
+              "path": "/docs/guides/Playground/Contracts",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "guides/Playground/Create",
+              "path": "/docs/guides/Playground/Create",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "guides/registry",
+              "path": "/docs/guides/registry",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "guides/widget",
+              "path": "/docs/guides/widget",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "npm-packages",
+              "path": "/docs/npm-packages",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "overview/introduction",
+              "path": "/docs/overview/introduction",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "q-and-a/common-questions",
+              "path": "/docs/q-and-a/common-questions",
+              "sidebar": "docsSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docsSidebar": {
+              "link": {
+                "path": "/docs/overview/introduction",
+                "label": "overview/introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "permalink": "/blog/new-release-schedule",
+  "source": "@site/blog/2024-06-05-new-release-schedule/index.md",
+  "title": "New Release Schedule",
+  "description": "Start with version 24.0.0, we will begin to shift from the old \"trimonthly\" mega release model, which contains many bugfixes and new features but also may cause some important fixes to be delayed up to 3 months or more, to a new \"move fast\" and \"fix fast\" model, here is a diagram explain our new version mechanism:",
+  "date": "2024-06-05T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Release",
+      "permalink": "/blog/tags/release",
+      "description": "All release-related posts"
+    }
+  ],
+  "readingTime": 0.85,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Cat",
+      "title": "Maintainer of NeXT-Panel and many other projects",
+      "url": "https://github.com/AutisticShark",
+      "imageURL": "../img/shiroko_aviator.png",
+      "key": "cat"
+    }
+  ],
+  "frontMatter": {
+    "slug": "new-release-schedule",
+    "title": "New Release Schedule",
+    "authors": [
+      "cat"
+    ],
+    "tags": [
+      "release"
+    ]
+  },
+  "unlisted": false
+}

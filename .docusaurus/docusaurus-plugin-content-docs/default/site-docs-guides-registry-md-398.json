@@ -1,0 +1,27 @@
+{
+  "id": "guides/registry",
+  "title": "Registry",
+  "description": "",
+  "source": "@site/docs/guides/registry.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/registry",
+  "permalink": "/docs/guides/registry",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/registry.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Contracts - Methods",
+    "permalink": "/docs/guides/Playground/Contracts"
+  },
+  "next": {
+    "title": "Common Questions",
+    "permalink": "/docs/q-and-a/common-questions"
+  }
+}

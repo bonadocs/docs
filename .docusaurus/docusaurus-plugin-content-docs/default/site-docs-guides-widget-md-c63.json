@@ -1,0 +1,27 @@
+{
+  "id": "guides/widget",
+  "title": "Widget",
+  "description": "Introduction",
+  "source": "@site/docs/guides/widget.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/widget",
+  "permalink": "/docs/guides/widget",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/widget.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Docgen",
+    "permalink": "/docs/guides/docgen"
+  },
+  "next": {
+    "title": "Create Playground",
+    "permalink": "/docs/guides/Playground/Create"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "guides/docgen",
+  "title": "Docgen",
+  "description": "Docgen",
+  "source": "@site/docs/guides/docgen.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/docgen",
+  "permalink": "/docs/guides/docgen",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/docgen.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/overview/introduction"
+  },
+  "next": {
+    "title": "Widget",
+    "permalink": "/docs/guides/widget"
+  }
+}
