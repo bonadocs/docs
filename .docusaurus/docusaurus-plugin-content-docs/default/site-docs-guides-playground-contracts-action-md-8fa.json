@@ -1,7 +1,7 @@
 {
   "id": "guides/Playground/Contracts/Action",
   "title": "Actions",
-  "description": "Actions allows us to interact with our contracts using a JavaScript environment; similar to the frontend of an application. Multiple smart contract method calls and transactions are required to complete certain complex actions. For example, executing a Swap action on Uniswap involves at least two calls for most tokens: approve tokens (approve), execute swap (swapExactTokensForTokens). Actions allows us to complete these kind of interactions on smart contracts.",
+  "description": "Actions allow us to interact with our contracts using a JavaScript environment; similar to the front end of an application. Multiple smart contract method calls and transactions are required to complete certain complex actions. For example, executing a Swap action on Uniswap involves at least two calls for most tokens: approve tokens (approve), and execute swap (swapExactTokensForTokens). Actions allow us to complete these kinds of interactions on smart contracts.",
   "source": "@site/docs/guides/Playground/Contracts/Action.md",
   "sourceDirName": "guides/Playground/Contracts",
   "slug": "/guides/Playground/Contracts/Action",

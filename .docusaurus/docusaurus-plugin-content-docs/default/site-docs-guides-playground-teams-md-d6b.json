@@ -1,7 +1,7 @@
 {
   "id": "guides/Playground/Teams",
   "title": "Team members",
-  "description": "You can invite members to your team. This gives them access to view and even edit your team projects depending on the role you asssign the members.",
+  "description": "You can invite members to your team. This gives them access to view and even edit your team projects depending on the role you asssign each member.",
   "source": "@site/docs/guides/Playground/Teams.md",
   "sourceDirName": "guides/Playground",
   "slug": "/guides/Playground/Teams",

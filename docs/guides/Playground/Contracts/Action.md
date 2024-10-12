@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Actions
 
-Actions allows us to interact with our contracts using a JavaScript environment; similar to the frontend of an application. Multiple smart contract method calls and transactions are required to complete certain complex actions. For example, executing a Swap action on Uniswap involves at least two calls for most tokens: approve tokens (`approve`), execute swap (`swapExactTokensForTokens`). Actions allows us to complete these kind of interactions on smart contracts.
+Actions allow us to interact with our contracts using a JavaScript environment; similar to the front end of an application. Multiple smart contract method calls and transactions are required to complete certain complex actions. For example, executing a Swap action on Uniswap involves at least two calls for most tokens: approve tokens (`approve`), and execute swap (`swapExactTokensForTokens`). Actions allow us to complete these kinds of interactions on smart contracts.
 
 To create an action, click on the `Add` icon as shown below:
 
@@ -16,13 +16,17 @@ Add your action `name` and select the `network` you want to run your actions on.
 
 ## Built-in Variables
 
-We have certain built in variables that allow developers access and initialise their contracts, ethers, etc.
+We have certain built-in variables that allow developers to access and initialize their contracts, etc.
 
 ![Actions code](https://res.cloudinary.com/dfkuxnesz/image/upload/v1728658945/Screenshot_2024-10-11_at_16.02.09_ilteg3.png)
 
-The most used variables includes:
+The most used built-in variables includes:
 
 - Ethers variables (`parseUnits`, `formatUnits`, `ZeroAddress`, etc).
+
+```js
+const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress } = ethers;
+```
 - `Bonadocs.contracts`: This contains all the contracts inside the playground.
 In the example below, we want to use the `SablierV2LockupLinear` contract in our playground.
 
@@ -61,7 +65,7 @@ const sablier = new Contract(
   wealthySigner
 );
 ```
-Once we initiate the `sablier` contract, we can now use it to query it's methods. Below, we use it to query the `createWithDurations` method.
+Once we initiate the `sablier` contract, we can now use it to query methods. Below, we use it to query the `createWithDurations` method.
 ```js
 try {
   const streamTx = await sablier.createWithDurations([

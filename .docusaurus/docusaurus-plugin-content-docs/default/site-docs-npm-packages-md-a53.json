@@ -1,7 +1,7 @@
 {
   "id": "npm-packages",
   "title": "Packages",
-  "description": "Here are bonadocs' NPM packages and their links:",
+  "description": "Here are bonadocs' public-facing NPM packages and their links:",
   "source": "@site/docs/npm-packages.md",
   "sourceDirName": ".",
   "slug": "/npm-packages",

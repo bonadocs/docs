@@ -1,7 +1,7 @@
 {
   "id": "guides/Playground/Create",
   "title": "Create Playground",
-  "description": "The playground creates a \"one-stop shop\" to for your protocol. This allows you onboard anyone unto your protocol easily. Here are the steps to create a playground for your protocol:",
+  "description": "The playground creates a \"one-stop shop\" for your protocol. This allows you to onboard anyone into your protocol easily. Here are the steps to create a playground for your protocol:",
   "source": "@site/docs/guides/Playground/Create.md",
   "sourceDirName": "guides/Playground",
   "slug": "/guides/Playground/Create",

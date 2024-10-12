@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Introduction
 
-When reading the documentation, the explanation of the protocol contracts is great. However, developers have to setup a basic testing environment to interact with the contracts to better understand the behavior.
+When reading the documentation, the explanation of the protocol contracts is great. However, developers have to set up a basic testing environment to interact with the contracts to better understand the contract behavior.
 
 The widget eliminates this by enabling developers to interact with the contract methods directly within the documentation. This greatly reduces integration time and the context switching that would otherwise be required, making protocols more developer-friendly.
 
@@ -14,9 +14,9 @@ Bonadocs widget allows you to enable interactivity within your docs through widg
 
 ## Getting Started
 
-> Make sure you've first learnt how to create a playground.
+> Make sure you've first learnt how to create a [playground](/docs/guides/Playground/Create.md).
 
-We generate the widget inside the playground. All you have to do is open a contract dropdown and select the method for which widget you want to create. After which, you click on "Generate Widget".
+We generate the widget inside the playground. All you have to do is open a contract dropdown and select the method for which widget you want to create. After which, you click on `Generate Widget`.
 
 ![Widget](https://res.cloudinary.com/dfkuxnesz/image/upload/v1728630939/Screenshot_2024-10-11_at_07.38.05_kocjys.png)
 
@@ -36,7 +36,7 @@ You’ll have to install the  widget using
 npm i @bonadocs/widget
 ```
 
-Then, we import the BonadocsWidget component into our docs’ `md` page.
+Then, we import the `BonadocsWidget` component into our docs’ `md` page.
 
 ```js
 import BonadocsWidget from "@bonadocs/widget"

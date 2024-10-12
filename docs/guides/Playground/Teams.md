@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Team members
 
-You can invite members to your team. This gives them access to view and even edit your team projects depending on the role you asssign the members.
+You can invite members to your team. This gives them access to view and even edit your team projects depending on the role you asssign each member.
 
 - Click on the menu icon on your team. It opens up a list of option where you select `Team members`.
 
