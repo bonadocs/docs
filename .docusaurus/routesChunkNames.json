@@ -94,17 +94,17 @@
     ],
     "__props": "__props---blog-tags-releasec-9-c-173"
   },
-  "/docs-aec": {
+  "/docs-1e3": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-c53": {
+  "/docs-86c": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-99d": {
+  "/docs-b2f": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/guides/docgen-e9f": {
@@ -122,6 +122,10 @@
   "/docs/guides/Playground/Create-163": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-playground-create-3-ff-b51"
+  },
+  "/docs/guides/Playground/Documentation-071": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-playground-documentation-603-be0"
   },
   "/docs/guides/Playground/Edit-d11": {
     "__comp": "__comp---theme-doc-item-178-a40",

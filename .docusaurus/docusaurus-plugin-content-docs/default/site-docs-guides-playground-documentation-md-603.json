@@ -1,0 +1,27 @@
+{
+  "id": "guides/Playground/Documentation",
+  "title": "Documentation",
+  "description": "The goal of documenting on bonadocs is to ensure that there's an explanation every step of the way as developers go through your project.",
+  "source": "@site/docs/guides/Playground/Documentation.md",
+  "sourceDirName": "guides/Playground",
+  "slug": "/guides/Playground/Documentation",
+  "permalink": "/docs/guides/Playground/Documentation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/Playground/Documentation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/docs/guides/Playground/Variables"
+  },
+  "next": {
+    "title": "Protocol Registry",
+    "permalink": "/docs/guides/registry"
+  }
+}

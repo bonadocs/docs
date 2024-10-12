@@ -64,15 +64,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'aec'),
+    component: ComponentCreator('/docs', '1e3'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'c53'),
+        component: ComponentCreator('/docs', '86c'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '99d'),
+            component: ComponentCreator('/docs', 'b2f'),
             routes: [
               {
                 path: '/docs/guides/docgen',
@@ -95,6 +95,12 @@ export default [
               {
                 path: '/docs/guides/Playground/Create',
                 component: ComponentCreator('/docs/guides/Playground/Create', '163'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/guides/Playground/Documentation',
+                component: ComponentCreator('/docs/guides/Playground/Documentation', '071'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

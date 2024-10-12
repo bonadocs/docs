@@ -1,7 +1,7 @@
 {
   "id": "guides/registry",
   "title": "Protocol Registry",
-  "description": "",
+  "description": "The protocol registry allows you find different popular protocols and their respective playgrounds. Each protocol links to a playground that allows devs interact with their contract methods and actions.",
   "source": "@site/docs/guides/registry.md",
   "sourceDirName": "guides",
   "slug": "/guides/registry",
@@ -17,8 +17,8 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Variables",
-    "permalink": "/docs/guides/Playground/Variables"
+    "title": "Documentation",
+    "permalink": "/docs/guides/Playground/Documentation"
   },
   "next": {
     "title": "Common Questions",
