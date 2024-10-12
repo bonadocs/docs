@@ -9,6 +9,4 @@ Bonadocs allows web3 engineering teams to collaborate and build applications in 
 
 On a high level, bonadocs is created to simplify the documentation, interaction, and integration of smart contracts.
 
-## License
 
-[GPL-3.0 License](blob/dev/LICENSE)
