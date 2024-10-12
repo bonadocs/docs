@@ -1,7 +1,7 @@
 {
   "id": "npm-packages",
   "title": "Packages",
-  "description": "This document is currently WiP.",
+  "description": "Here are bonadocs' NPM packages and their links:",
   "source": "@site/docs/npm-packages.md",
   "sourceDirName": ".",
   "slug": "/npm-packages",
@@ -14,7 +14,7 @@
   "frontMatter": {},
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Common Questions",
-    "permalink": "/docs/q-and-a/common-questions"
+    "title": "Protocol Registry",
+    "permalink": "/docs/guides/registry"
   }
 }

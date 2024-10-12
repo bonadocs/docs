@@ -1,7 +1,7 @@
 {
   "id": "q-and-a/common-questions",
   "title": "Common Questions",
-  "description": "Subscription links do not update properly after configuring Cloudflare CDN",
+  "description": "Where is the source code of the project?",
   "source": "@site/docs/q-and-a/common-questions.md",
   "sourceDirName": "q-and-a",
   "slug": "/q-and-a/common-questions",

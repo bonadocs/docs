@@ -94,17 +94,17 @@
     ],
     "__props": "__props---blog-tags-releasec-9-c-173"
   },
-  "/docs-1e3": {
+  "/docs-e7b": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-86c": {
+  "/docs-7f2": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-b2f": {
+  "/docs-9bc": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/guides/docgen-e9f": {
@@ -131,6 +131,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-playground-edit-8-c-6-78a"
   },
+  "/docs/guides/Playground/Teams-d49": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-playground-teamsd-6-b-5ea"
+  },
   "/docs/guides/Playground/Variables-3b9": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-playground-variablesfae-8eb"
@@ -150,10 +154,6 @@
   "/docs/overview/introduction-467": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-overview-introduction-8-d-7-789"
-  },
-  "/docs/q-and-a/common-questions-cb4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-q-and-a-common-questions-8-b-6-e08"
   },
   "/-2e1": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

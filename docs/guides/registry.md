@@ -15,3 +15,6 @@ The protocol registry allows you find different popular protocols and their resp
 - Click on the `Open on Bonadocs` button
 
 ![Registry modal](https://res.cloudinary.com/dfkuxnesz/image/upload/v1728709313/Screenshot_2024-10-12_at_06.01.15_ezhuom.png)
+
+
+It's open-source and you can contribute to it right here - https://github.com/bonadocs/protocol-registry

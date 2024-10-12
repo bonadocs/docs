@@ -41,6 +41,11 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "guides/Playground/Teams",
+              "path": "/docs/guides/Playground/Teams",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "guides/Playground/Variables",
               "path": "/docs/guides/Playground/Variables",
               "sidebar": "docsSidebar"
@@ -63,11 +68,6 @@
             {
               "id": "overview/introduction",
               "path": "/docs/overview/introduction",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "q-and-a/common-questions",
-              "path": "/docs/q-and-a/common-questions",
               "sidebar": "docsSidebar"
             }
           ],

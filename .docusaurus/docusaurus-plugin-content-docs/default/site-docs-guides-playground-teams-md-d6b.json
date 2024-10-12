@@ -1,0 +1,27 @@
+{
+  "id": "guides/Playground/Teams",
+  "title": "Team members",
+  "description": "You can invite members to your team. This gives them access to view and even edit your team projects depending on the role you asssign the members.",
+  "source": "@site/docs/guides/Playground/Teams.md",
+  "sourceDirName": "guides/Playground",
+  "slug": "/guides/Playground/Teams",
+  "permalink": "/docs/guides/Playground/Teams",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/bonadocs/docs/docs/guides/Playground/Teams.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Documentation",
+    "permalink": "/docs/guides/Playground/Documentation"
+  },
+  "next": {
+    "title": "Protocol Registry",
+    "permalink": "/docs/guides/registry"
+  }
+}

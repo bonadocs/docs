@@ -17,11 +17,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Documentation",
-    "permalink": "/docs/guides/Playground/Documentation"
+    "title": "Team members",
+    "permalink": "/docs/guides/Playground/Teams"
   },
   "next": {
-    "title": "Common Questions",
-    "permalink": "/docs/q-and-a/common-questions"
+    "title": "Packages",
+    "permalink": "/docs/npm-packages"
   }
 }

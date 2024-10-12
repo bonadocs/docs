@@ -64,15 +64,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '1e3'),
+    component: ComponentCreator('/docs', 'e7b'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '86c'),
+        component: ComponentCreator('/docs', '7f2'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'b2f'),
+            component: ComponentCreator('/docs', '9bc'),
             routes: [
               {
                 path: '/docs/guides/docgen',
@@ -111,6 +111,12 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
+                path: '/docs/guides/Playground/Teams',
+                component: ComponentCreator('/docs/guides/Playground/Teams', 'd49'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
                 path: '/docs/guides/Playground/Variables',
                 component: ComponentCreator('/docs/guides/Playground/Variables', '3b9'),
                 exact: true,
@@ -137,12 +143,6 @@ export default [
               {
                 path: '/docs/overview/introduction',
                 component: ComponentCreator('/docs/overview/introduction', '467'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/q-and-a/common-questions',
-                component: ComponentCreator('/docs/q-and-a/common-questions', 'cb4'),
                 exact: true,
                 sidebar: "docsSidebar"
               }
