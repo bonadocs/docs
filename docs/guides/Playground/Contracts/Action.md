@@ -27,21 +27,30 @@ The most used built-in variables includes:
 ```js
 const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress } = ethers;
 ```
-- `Bonadocs.contracts`: This contains all the contracts inside the playground.
-In the example below, we want to use the `SablierV2LockupLinear` contract in our playground.
+
+- `bonadocs.contracts`: This contains all the contracts inside the playground.
+  In the example below, we want to use the `SablierV2LockupLinear` contract in our playground.
 
 ```js
 const { address: sablierV2LockupLinearAddress, abi: sablierV2LockupLinearAbi } =
   bonadocs.contracts.SablierV2LockupLinear;
 ```
-Once you add your contracts, you can destructure it to get the address and ABI of the contract.
 
-- `SimulationProvider` from zimulatoor. This allows us create simulated signers for any address, which is used to initialize the contracts and make queries.
+Once you add your contracts, you can destructure it to get the address, and ABI of the contract. Similarly, you can also get the `chainId` and `name` of the contract.
+
+- `bonadocs.commonAbis.erc20`: basic `erc20` abi in a format supported by `ethers`.
+
+```js
+const erc20Abi = bonadocs.commonAbis.erc20;
+```
+
+- `SimulationProvider` from [zimulatoor](https://www.npmjs.com/package/@bonadocs/zimulatoor). This allows us create simulated signers for any address, which is used to initialize the contracts and make queries.
+
 ```js
 const { SimulationProvider } = zimulatoor;
 ```
 
-When we use them together, we create the `provider` using the `chainId`. Then, we use the `provider.getImpersonatedSigner()` to create the signer (`wealthySigner`) for our `wealthyAddress`. 
+When we use them together, we create the `provider` using the `chainId`. Then, we use the `provider.getImpersonatedSigner()` to create the signer (`wealthySigner`) for our `wealthyAddress`.
 
 The `sablier` contract is now initiated using:
 
@@ -65,7 +74,9 @@ const sablier = new Contract(
   wealthySigner
 );
 ```
+
 Once we initiate the `sablier` contract, we can now use it to query methods. Below, we use it to query the `createWithDurations` method.
+
 ```js
 try {
   const streamTx = await sablier.createWithDurations([
@@ -103,7 +114,24 @@ try {
   console.error(error);
 }
 ```
-P.S: We make use of `parseEthersError` to properly parse errors. It's built into the action code environment; not imported from `ethers`. 
+
+P.S: We make use of `parseEthersError` to properly parse errors. It's built into the action code environment; not imported from `ethers`.
+
+## Self
+
+Actions run in a dedicated worker in the browser, so they can access any browser API using `self`.
+
+In the example below, we use `self.crypto` the same way you use `window.crypto` in your browser.
+
+```ts
+ const encrypted = await self.crypto.subtle.encrypt(
+    {
+      name: 'RSA-OAEP'
+    },
+    publicKey: CryptoKey,
+    dataBuffer: Uint8Array
+  );
+```
 
 ## Packages
 
@@ -131,6 +159,8 @@ const areObjectsEqual = _.isEqual(object1, object2);
 
 console.log(areObjectsEqual);
 ```
+
+P.S: Only packages with `esm` modules need the `require` function to get the module data. `umd` modules are accessible directly with the global object added by the module, i.e, `ethers` above.
 
 ## Run Your Action
 

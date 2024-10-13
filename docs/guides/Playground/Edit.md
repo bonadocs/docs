@@ -8,9 +8,9 @@ Once inside the playground, you can make changes to the project name, descriptio
 
 ![Edit playground](https://res.cloudinary.com/dfkuxnesz/image/upload/v1728650897/Screenshot_2024-10-11_at_13.46.43_am94lv.png)
 
-Once you're done, click the `Update Contracts` button below.
+Once you're done, click the `Save` button below.
 
-![Edit playground](https://res.cloudinary.com/dfkuxnesz/image/upload/v1728650898/Screenshot_2024-10-11_at_13.47.57_oefo0x.png)
+![Edit playground](https://res.cloudinary.com/dfkuxnesz/image/upload/v1728734979/Screenshot_2024-10-12_at_13.08.58_rlah8m.png)
 
 
 
