@@ -75,10 +75,10 @@ export default {
 ```
 Then run with `npx hardhat docgen`.
 
-This creates a new a new folder called `site`. Next, run this command to go into the `site` folder.
+This creates a new a new folder called `docs`. Next, run this command to go into the `docs` folder.
 
 ```js
-cd site
+cd docs
 ```
 Finally, install your doc packages using `yarn`. Then, run `yarn start` to launch your interactive documentation.
 
