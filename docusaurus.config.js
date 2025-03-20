@@ -43,7 +43,7 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      image: "img/bonadocs-fullmark.svg",
+      image: "img/og-image-bonadocs.jpg",
       navbar: {
         title: "Bonadocs",
         logo: {
