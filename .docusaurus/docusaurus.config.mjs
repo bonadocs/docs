@@ -42,7 +42,7 @@ export default {
       "defaultMode": "light",
       "disableSwitch": false
     },
-    "image": "img/bonadocs-fullmark.svg",
+    "image": "img/og-image-bonadocs.jpg",
     "navbar": {
       "title": "Bonadocs",
       "logo": {

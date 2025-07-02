@@ -44,7 +44,114 @@ Once you add your contracts, you can destructure it to get the address, and ABI 
 const erc20Abi = bonadocs.commonAbis.erc20;
 ```
 
-- `SimulationProvider` from [zimulatoor](https://www.npmjs.com/package/@bonadocs/zimulatoor). This allows us create simulated signers for any address, which is used to initialize the contracts and make queries.
+## Simulation Engine
+Each action requires a simulation engine to enable it to run within the playground. The reason is that this allows developers to get access to a provider and signer for contract interaction without connecting an actual wallet. Currently, we support  the following simulators: 
+
+### `Buildbear`
+[Buildbear](https://www.buildbear.io/) is a simulation engine that allows you to fork your preferred network and gives you access to a faucet, RPC URL, explorer, etc for your forked network. This allows you to interact with your contract within our controlled action environment. 
+
+The code template below creates a new wallet with `ethers`, funds it with gas fees, and the preferred token for the transaction. Then, it makes the provider and signer available for the actual transaction. You'll have to go to [Buildbear](https://www.buildbear.io/) to get your network's RPC URL.
+
+```js
+const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress, Mnemonic, Wallet } = ethers;
+
+const BUILDBEAR_RPC_URL = ''; // Replace with your buildbear RPC URL
+const CONTRACT_ADDRESS_OF_TOKEN_ON_NETWORK = ''; // Replace with the actual contract address of the token you want to fund
+const provider = new ethers.JsonRpcProvider(BUILDBEAR_RPC_URL);
+const signer = Wallet.fromPhrase(Mnemonic.fromEntropy(ethers.randomBytes(24)).phrase, provider);
+const blockNumber = await provider.getBlockNumber();
+console.log(blockNumber);
+
+await(async () => {
+    try {
+        // Funding the created wallet with gas fees 
+        await fetch(BUILDBEAR_RPC_URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                jsonrpc: "2.0",
+                id: 1,
+                method: "buildbear_nativeFaucet",
+                params: [
+                    {
+                        address: signer.address,
+                        balance: "10000000000000000000",
+                        unit: "wei"
+                    }
+                ]
+            })
+        }
+
+        )
+
+        // Fund any ERC20 token using buildbear_ERC20Faucet
+        await fetch(BUILDBEAR_RPC_URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                jsonrpc: "2.0",
+                id: 1,
+                method: "buildbear_ERC20Faucet",
+                params: [
+                    {
+                        address: signer.address,
+                        balance: "10000000000000000000",
+                        token: CONTRACT_ADDRESS_OF_TOKEN_ON_NETWORK,
+                        unit: "wei"
+                    }
+                ]
+            })
+        })
+
+    } catch (err) {
+
+        console.log(err)
+    }
+
+})();
+
+// Initiate your contracts (bonadocs.contracts) with the provider and signer
+```
+### `Tenderly virtual Testnet`
+[Tenderly virtual testnet](https://docs.tenderly.co/virtual-testnets) is a simulation engine by [tenderly](https://tenderly.co/) that allows you to fork your preferred network and gives you access to a faucet, RPC URL, explorer, etc for your forked network. This allows you to interact with your contract within our controlled action environment. 
+
+The code template below creates a new wallet with `ethers`, funds it with gas fees, and the preferred token for the transaction. Then, it makes the provider and signer available for the actual transaction. You'll have to go to [Tenderly](https://tenderly.co/) to get your network's RPC URL.
+```js
+const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress, Mnemonic, Wallet } = ethers;
+const TENDERLY_RPC_URL = "";
+const USDC_CONTRACT_ADDRESS = ""; // Replace with the actual contract address of your token on the network
+
+const provider = new ethers.JsonRpcProvider(TENDERLY_RPC_URL);
+const signer = Wallet.fromPhrase(Mnemonic.fromEntropy(ethers.randomBytes(24)).phrase, provider);
+
+await(async () => {
+    // Funding the created wallet with gas fees 
+    await provider.send("tenderly_setBalance", [
+        signer.address,
+        "0xDE0B6B3A7640000",  // ~1 ETH for gas fees
+    ]);
+
+    const USDC_DECIMALS = 6;
+    // Fund with USDC using tenderly_setErc20Balance
+    const usdcAmount = "1000"; // 1000 USDC (Replace with the actual decimals of your token on the network)
+    const usdcAmountWei = ethers.parseUnits(usdcAmount, USDC_DECIMALS);
+
+    await provider.send("tenderly_setErc20Balance", [
+        USDC_CONTRACT_ADDRESS,
+        signer.address,
+        ethers.toBeHex(usdcAmountWei)
+    ]);
+
+})();
+// Initiate your contracts (bonadocs.contracts) with the provider and signer
+```
+### `Zimulatoor`
+
+- `SimulationProvider` from [zimulatoor](https://www.npmjs.com/package/@bonadocs/zimulatoor). It's our native simulation engine that allows us to create simulated signers for any address, which is used to initialize the contracts and make queries. It creates a simulated provider for any wallet and doesn't require you to bring in a new wallet private key.
 
 ```js
 const { SimulationProvider } = zimulatoor;
