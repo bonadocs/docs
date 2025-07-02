@@ -45,7 +45,7 @@ const erc20Abi = bonadocs.commonAbis.erc20;
 ```
 
 ## Simulation Engine
-Each action requires a simulation engine to enable it to run within the playground. The reason is that this allows developers to get access to a provider and signer for contract interaction without connecting an actual wallet. Currently, we support  the following simulators: 
+Actions use simulation engines to enable to run within the playground. The reason is that this allows developers to get access to a provider and signer for contract interaction without connecting an actual wallet. Currently, we support  the following simulators: 
 
 ### `Buildbear`
 [Buildbear](https://www.buildbear.io/) is a simulation engine that allows you to fork your preferred network and gives you access to a faucet, RPC URL, explorer, etc for your forked network. This allows you to interact with your contract within our controlled action environment. 
@@ -53,9 +53,12 @@ Each action requires a simulation engine to enable it to run within the playgrou
 The code template below creates a new wallet with `ethers`, funds it with gas fees, and the preferred token for the transaction. Then, it makes the provider and signer available for the actual transaction. You'll have to go to [Buildbear](https://www.buildbear.io/) to get your network's RPC URL.
 
 ```js
-const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress, Mnemonic, Wallet } = ethers;
+// ⚠️ Write action in Javascript
+// ⚠️ Make sure to replace the BUILDBEAR_RPC_URL and CONTRACT_ADDRESS_OF_TOKEN_ON_NETWORK with the actual values for your BuildBear simulation environment
 
-const BUILDBEAR_RPC_URL = ''; // Replace with your buildbear RPC URL
+const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress, Mnemonic, Wallet } = ethers;
+// const { address, abi } = bonadocs.contracts.{CONTRACT_NAME};
+const BUILDBEAR_RPC_URL = '';
 const CONTRACT_ADDRESS_OF_TOKEN_ON_NETWORK = ''; // Replace with the actual contract address of the token you want to fund
 const provider = new ethers.JsonRpcProvider(BUILDBEAR_RPC_URL);
 const signer = Wallet.fromPhrase(Mnemonic.fromEntropy(ethers.randomBytes(24)).phrase, provider);
@@ -114,17 +117,26 @@ await(async () => {
 
 })();
 
-// Initiate your contracts (bonadocs.contracts) with the provider and signer
+// Initiate your contracts (bonadocs.contracts) with the signer
+
+// const contractName = new Contract(
+//     address,
+//     abi,
+//     signer,
+// );
 ```
 ### `Tenderly virtual Testnet`
 [Tenderly virtual testnet](https://docs.tenderly.co/virtual-testnets) is a simulation engine by [tenderly](https://tenderly.co/) that allows you to fork your preferred network and gives you access to a faucet, RPC URL, explorer, etc for your forked network. This allows you to interact with your contract within our controlled action environment. 
 
 The code template below creates a new wallet with `ethers`, funds it with gas fees, and the preferred token for the transaction. Then, it makes the provider and signer available for the actual transaction. You'll have to go to [Tenderly](https://tenderly.co/) to get your network's RPC URL.
 ```js
+// ⚠️ Write action in Javascript
+// ⚠️ Make sure to replace the TENDERLY_RPC_URL, USDC_CONTRACT_ADDRESS, and USDC_DECIMALS with the actual values for your Tenderly simulation environment
+
 const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress, Mnemonic, Wallet } = ethers;
 const TENDERLY_RPC_URL = "";
 const USDC_CONTRACT_ADDRESS = ""; // Replace with the actual contract address of your token on the network
-
+// const { address, abi } = bonadocs.contracts.{CONTRACT_NAME}; // Replace with the actual contract name
 const provider = new ethers.JsonRpcProvider(TENDERLY_RPC_URL);
 const signer = Wallet.fromPhrase(Mnemonic.fromEntropy(ethers.randomBytes(24)).phrase, provider);
 
@@ -147,7 +159,12 @@ await(async () => {
     ]);
 
 })();
-// Initiate your contracts (bonadocs.contracts) with the provider and signer
+// Initiate your contracts (bonadocs.contracts) with the signer
+// const contractName = new Contract(
+//     address,
+//     abi,
+//     signer,
+// );
 ```
 ### `Zimulatoor`
 
@@ -224,6 +241,33 @@ try {
 
 P.S: We make use of `parseEthersError` to properly parse errors. It's built into the action code environment; not imported from `ethers`.
 
+### Direct Mainnet/Testnet Interaction
+Developers can also interact with their contracts over mainnet or testnet. They would have to bring in their private key and funded address into the actions.
+
+```js
+// ⚠️ Write action in Javascript
+const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress, Mnemonic, Wallet } = ethers;
+
+const TESTNET_RPC_URL = ''; // Replace with your RPC URL
+const PRIVATE_KEY = ''; // Replace with your actual private key
+// const { address, abi } = bonadocs.contracts.{CONTRACT_NAME}; // Replace with the actual contract name
+
+// Initialize provider
+const provider = new ethers.JsonRpcProvider(TESTNET_RPC_URL);
+
+// Method 1: Create wallet (which is a signer) with provider
+const wallet = new Wallet(PRIVATE_KEY, provider);
+const signer = wallet; // wallet IS a signer
+
+
+// Initiate your contracts (bonadocs.contracts) with the signer
+// const contractName = new Contract(
+//     address,
+//     abi,
+//     signer,
+// );
+```
+
 ## Self
 
 Actions run in a dedicated worker in the browser, so they can access any browser API using `self`.
@@ -241,6 +285,11 @@ In the example below, we use `self.crypto` the same way you use `window.crypto` 
 ```
 
 ## Packages
+
+:::info Packages Information
+*Our package feature is experimental and doesn't yet cover all package importation edge cases. We recommend that developers use native JS and browser APIs over importing packages into the actions environment.*
+:::
+
 
 You can add custom NPM packages to your actions. Click on `Packages` and the `Add` icon below
 
@@ -269,6 +318,7 @@ console.log(areObjectsEqual);
 
 P.S: Only packages with `esm` modules need the `require` function to get the module data. `umd` modules are accessible directly with the global object added by the module, i.e, `ethers` above.
 
+You can also use your package's CDN link to quickly use it within the action.
 ## Run Your Action
 
 Click on the `Run` button below and you'll get your response on the right.
