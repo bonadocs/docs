@@ -168,7 +168,7 @@ await(async () => {
 ```
 ### `Zimulatoor`
 
-- `SimulationProvider` from [zimulatoor](https://www.npmjs.com/package/@bonadocs/zimulatoor). It's our native simulation engine that allows us to create simulated signers for any address, which is used to initialize the contracts and make queries. It creates a simulated provider for any wallet and doesn't require you to bring in a new wallet private key.
+`SimulationProvider` from [zimulatoor](https://www.npmjs.com/package/@bonadocs/zimulatoor). It's our native simulation engine that allows us to create simulated signers for any address, which is used to initialize the contracts and make queries. It creates a simulated provider for any wallet and doesn't require you to bring in a new wallet private key.
 
 ```js
 const { SimulationProvider } = zimulatoor;
