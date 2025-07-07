@@ -28,6 +28,10 @@ The most used built-in variables includes:
 const { Contract, formatUnits, parseUnits, BigNumber, ZeroAddress } = ethers;
 ```
 
+:::info Viem Support
+*Support for the [viem](https://viem.sh/) library is still in development.*
+:::
+
 - `bonadocs.contracts`: This contains all the contracts inside the playground.
   In the example below, we want to use the `SablierV2LockupLinear` contract in our playground.
 
@@ -241,7 +245,7 @@ try {
 
 P.S: We make use of `parseEthersError` to properly parse errors. It's built into the action code environment; not imported from `ethers`.
 
-### Direct Mainnet/Testnet Interaction
+### `Direct Mainnet/Testnet Interaction`
 Developers can also interact with their contracts over mainnet or testnet. They would have to bring in their private key and funded address into the actions.
 
 ```js
