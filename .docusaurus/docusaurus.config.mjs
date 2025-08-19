@@ -12,8 +12,8 @@ export default {
   "organizationName": "Bonadocs",
   "projectName": "Docs",
   "trailingSlash": false,
-  "onBrokenLinks": "warn",
-  "onBrokenMarkdownLinks": "warn",
+  "onBrokenLinks": "ignore",
+  "onBrokenMarkdownLinks": "ignore",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -28,6 +28,10 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
+          "editUrl": "https://github.com/bonadocs/docs"
+        },
+        "blog": {
+          "showReadingTime": true,
           "editUrl": "https://github.com/bonadocs/docs"
         },
         "theme": {

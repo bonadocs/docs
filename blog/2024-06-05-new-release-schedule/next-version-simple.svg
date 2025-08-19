@@ -1,0 +1,92 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    Release Schedule
+  </text>
+  
+  <!-- Timeline -->
+  <line x1="50" y1="100" x2="550" y2="100" stroke="#007bff" stroke-width="3"/>
+  
+  <!-- Release points -->
+  <circle cx="150" cy="100" r="8" fill="#28a745"/>
+  <circle cx="300" cy="100" r="8" fill="#ffc107"/>
+  <circle cx="450" cy="100" r="8" fill="#dc3545"/>
+  
+  <!-- Labels -->
+  <text x="150" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    Current Release
+  </text>
+  <text x="300" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    Next Version
+  </text>
+  <text x="450" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    Future Release
+  </text>
+  
+  <!-- Version numbers -->
+  <text x="150" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    v1.0.0
+  </text>
+  <text x="300" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    v1.1.0
+  </text>
+  <text x="450" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    v2.0.0
+  </text>
+  
+  <!-- Feature boxes -->
+  <rect x="75" y="200" width="150" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="5"/>
+  <text x="150" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976d2">
+    Stable Features
+  </text>
+  <text x="150" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • Bug fixes
+  </text>
+  <text x="150" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • Performance improvements
+  </text>
+  <text x="150" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • Security updates
+  </text>
+  
+  <rect x="225" y="200" width="150" height="80" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="300" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f57c00">
+    New Features
+  </text>
+  <text x="300" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • Enhanced API
+  </text>
+  <text x="300" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • New components
+  </text>
+  <text x="300" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • Improved UX
+  </text>
+  
+  <rect x="375" y="200" width="150" height="80" fill="#ffebee" stroke="#f44336" stroke-width="1" rx="5"/>
+  <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d32f2f">
+    Breaking Changes
+  </text>
+  <text x="450" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • API restructure
+  </text>
+  <text x="450" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • Deprecated features
+  </text>
+  <text x="450" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    • Migration guide
+  </text>
+  
+  <!-- Timeline dates -->
+  <text x="150" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Released: Jan 2024
+  </text>
+  <text x="300" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Target: Jun 2024
+  </text>
+  <text x="450" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Planned: Dec 2024
+  </text>
+</svg>

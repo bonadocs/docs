@@ -1,5 +1,6 @@
 {
   "permalink": "/blog/new-release-schedule",
+  "editUrl": "https://github.com/bonadocs/docs/blog/2024-06-05-new-release-schedule/index.md",
   "source": "@site/blog/2024-06-05-new-release-schedule/index.md",
   "title": "New Release Schedule",
   "description": "Start with version 24.0.0, we will begin to shift from the old \"trimonthly\" mega release model, which contains many bugfixes and new features but also may cause some important fixes to be delayed up to 3 months or more, to a new \"move fast\" and \"fix fast\" model, here is a diagram explain our new version mechanism:",
