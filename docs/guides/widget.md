@@ -59,7 +59,7 @@ This codeblock is a sample for the [Morpho](https://morpho.org/) protocol.
 Try it out: https://morpho-demo.netlify.app/contracts/morphoblue/
 
 Github: https://github.com/bonadocs/morpho-demo
-
+<!-- 
 ## Using Widget in Mintlify
 To use the widget in Mintlify, you'll have to create a `snippets` folder and add the `BonadocsWidget.jsx` file. After which, you paste this component below. Within it, we use the CDN `https://cdn.jsdelivr.net/npm/@bonadocs/widget@1` to render the component inside the React component.
 
@@ -191,4 +191,4 @@ Here's a live example of the Bonadocs Widget integrated directly into this docum
   contract="0x83140"
   functionKey="0x83140.function.0xaea9467d"
 />
-```
+``` -->
