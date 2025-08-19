@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbonadocs_docs=self.webpackChunkbonadocs_docs||[]).push([[253],{192:(o,s,c)=>{c.r(s),c.d(s,{default:()=>n});c(6540);var d=c(6347),e=c(4848);function n(){return(0,e.jsx)(d.rd,{to:"/docs/overview/introduction"})}}}]);

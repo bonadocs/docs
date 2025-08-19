@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbonadocs_docs=self.webpackChunkbonadocs_docs||[]).push([[121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"Release","permalink":"/blog/tags/release","description":"All release-related posts","count":1}]}')}}]);

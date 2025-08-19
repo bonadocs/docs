@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Bonadocs Blog</title>
+        <link>https://docs.bonadocs.com/blog</link>
+        <description>Bonadocs Blog</description>
+        <lastBuildDate>Wed, 05 Jun 2024 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[New Release Schedule]]></title>
+            <link>https://docs.bonadocs.com/blog/new-release-schedule</link>
+            <guid>https://docs.bonadocs.com/blog/new-release-schedule</guid>
+            <pubDate>Wed, 05 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Start with version 24.0.0, we will begin to shift from the old "trimonthly" mega release model, which contains many bugfixes and new features but also may cause some important fixes to be delayed up to 3 months or more, to a new "move fast" and "fix fast" model, here is a diagram explain our new version mechanism:]]></description>
+            <content:encoded><![CDATA[<p>Start with version 24.0.0, we will begin to shift from the old "trimonthly" mega release model, which contains many bugfixes and new features but also may cause some important fixes to be delayed up to 3 months or more, to a new "move fast" and "fix fast" model, here is a diagram explain our new version mechanism:</p>
+<p><img decoding="async" loading="lazy" alt="NeXT Version Diagram" src="https://docs.bonadocs.com/assets/images/next-version-09027f32f2bd9b32093aec8a2bc810aa.svg" class="img_ev3q"></p>
+<p>Each feature version may contain 2-3 new feature/refactor/style design changes, and if there is no high-priority bug found after each feature release is published, then the bugfix version will be skipped and development will be moved to the next feature version. We also added more automation to the release publication process, simplified the workflow, and reduced the complexity, we believe this change will help us add more important that may be hard to do in the old release model.</p>
+<p>In the future we look forward to applying this release model to all of NeXT Panel projects, but with a more traditional semantic versioning scheme instead of release year-based rolling versioning.</p>]]></content:encoded>
+            <category>Release</category>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.bonadocs.com/blog</id>
+    <title>Bonadocs Blog</title>
+    <updated>2024-06-05T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.bonadocs.com/blog"/>
+    <subtitle>Bonadocs Blog</subtitle>
+    <icon>https://docs.bonadocs.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New Release Schedule]]></title>
+        <id>https://docs.bonadocs.com/blog/new-release-schedule</id>
+        <link href="https://docs.bonadocs.com/blog/new-release-schedule"/>
+        <updated>2024-06-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Start with version 24.0.0, we will begin to shift from the old "trimonthly" mega release model, which contains many bugfixes and new features but also may cause some important fixes to be delayed up to 3 months or more, to a new "move fast" and "fix fast" model, here is a diagram explain our new version mechanism:]]></summary>
+        <content type="html"><![CDATA[<p>Start with version 24.0.0, we will begin to shift from the old "trimonthly" mega release model, which contains many bugfixes and new features but also may cause some important fixes to be delayed up to 3 months or more, to a new "move fast" and "fix fast" model, here is a diagram explain our new version mechanism:</p>
+<p><img decoding="async" loading="lazy" alt="NeXT Version Diagram" src="https://docs.bonadocs.com/assets/images/next-version-09027f32f2bd9b32093aec8a2bc810aa.svg" class="img_ev3q"></p>
+<p>Each feature version may contain 2-3 new feature/refactor/style design changes, and if there is no high-priority bug found after each feature release is published, then the bugfix version will be skipped and development will be moved to the next feature version. We also added more automation to the release publication process, simplified the workflow, and reduced the complexity, we believe this change will help us add more important that may be hard to do in the old release model.</p>
+<p>In the future we look forward to applying this release model to all of NeXT Panel projects, but with a more traditional semantic versioning scheme instead of release year-based rolling versioning.</p>]]></content>
+        <author>
+            <name>Cat</name>
+            <uri>https://github.com/AutisticShark</uri>
+        </author>
+        <category label="Release" term="Release"/>
+    </entry>
+</feed>

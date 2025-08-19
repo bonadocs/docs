@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbonadocs_docs=self.webpackChunkbonadocs_docs||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"New Release Schedule","permalink":"/blog/new-release-schedule","unlisted":false}]}')}}]);
