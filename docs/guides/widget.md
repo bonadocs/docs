@@ -22,7 +22,7 @@ We generate the widget inside the playground. All you have to do is open a contr
 
 It opens up this modal below:
 
-![Widget](https://res.cloudinary.com/dfkuxnesz/image/upload/v1755630249/Screenshot_2025-08-19_at_20.02.17_jexh4r.png)
+![Widget](https://res.cloudinary.com/dfkuxnesz/image/upload/v1755634192/Screenshot_2025-08-19_at_21.08.55_wvgifh.png)
 
 Within the modal, we can see how to import and use the `<BonadocsWidget/>` component
 
