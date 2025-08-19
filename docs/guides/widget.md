@@ -61,7 +61,7 @@ Try it out: https://morpho-demo.netlify.app/contracts/morphoblue/
 Github: https://github.com/bonadocs/morpho-demo
 
 ## Using Widget in Mintlify
-To use the widget in Mintlify, you'll have to create a `snippets` folder and add the `BonadocsWidget.jsx` file. After which, you paste this component below. Within it, we use the CDN (`https://cdn.jsdelivr.net/npm/@bonadocs/widget@1`) to render the component inside the React component.
+To use the widget in Mintlify, you'll have to create a `snippets` folder and add the `BonadocsWidget.jsx` file. After which, you paste this component below. Within it, we use the CDN `https://cdn.jsdelivr.net/npm/@bonadocs/widget@1` to render the component inside the React component.
 
 ```js
 // snippets/BonadocsWidget.jsx
@@ -173,6 +173,7 @@ export default BonadocsWidget;
 ```
 
 We then go into our `mdx` and import the component and use it with the correct params.
+
 ```js
 ---
 title: 'Basic Widget Example'
