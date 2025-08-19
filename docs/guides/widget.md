@@ -172,7 +172,7 @@ export default BonadocsWidget;
 
 ```
 
-We then go into our `mdx` and import the component and use it with the correct params.
+We then go into our `mdx`, import the component, and use it with the correct params.
 
 ```js
 ---
